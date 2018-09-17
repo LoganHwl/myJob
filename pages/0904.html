@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/0904.css" />
+
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+	</head>
+
+	<body>
+
+		<!--<div id="main">-->
+			<div id="head"></div>
+			<!--华为mate10-->
+			<div id="mate">
+				<div class="a_mate">
+					<a href="http://www.51mkf.com/shop/item-117427.html" target="_blank">
+						<div class="mkf_117427"></div>
+					</a>
+				</div>
+			</div>
+			<!--华为nova-->
+			<div id="nova">
+				<div class="a_nova">
+					<a href="http://www.51mkf.com/shop/item-104408.html" target="_blank">
+						<div class="mkf_104408"></div>
+					</a>
+				</div>
+			</div>
+			<!--漫步者-->
+			<div id="edifier">
+				<div class="a_edifier">
+					<a href="http://www.51mkf.com/shop/item-111829.html" target="_blank">
+						<div class="mkf_111829"></div>
+					</a>
+				</div>
+			</div>
+			<!--叮咚mini2-->
+			<div id="mini2">
+				<div class="a_mini2">
+					<a href="http://www.51mkf.com/shop/item-111535.html" target="_blank">
+						<div class="mkf_111535"></div>
+					</a>
+				</div>
+			</div>
+			<!--荣事达-->
+			<div id="royalstar">
+				<div class="a_royalstar">
+					<a href="http://www.51mkf.com/shop/item-108082.html" target="_blank">
+						<div class="mkf_108082"></div>
+					</a>
+				</div>
+			</div>
+			<!--综合1-->
+			<div id="item1">
+				<!--清风-->
+				<div id="a_item1_01">
+					<a href="http://www.51mkf.com/shop/item-107911.html" target="_blank">
+						<div class="mkf_107911"></div>
+					</a>
+					<!--怡丽-->
+					<a href="http://www.51mkf.com/shop/item-113964.html" target="_blank">
+						<div class="mkf_113964"></div>
+					</a>
+					<!--超能-->
+					<a href="http://www.51mkf.com/shop/item-103393.html" target="_blank">
+						<div class="mkf_103393"></div>
+					</a>
+					<!--确美同-->
+					<a href="http://www.51mkf.com/shop/item-108467.html" target="_blank">
+						<div class="mkf_108467"></div>
+					</a>
+				</div>
+
+			</div>
+			<!--综合2-->
+			<div id="item2">
+
+				<div id="a_item2_01">
+					<!--多芬-->
+					<a href="http://www.51mkf.com/shop/item-109776.html" target="_blank">
+						<div class="mkf_109776"></div>
+					</a>
+					<!--玉兰油-->
+					<a href="http://www.51mkf.com/shop/item-112307.html" target="_blank">
+						<div class="mkf_112307"></div>
+					</a>
+					<!--可莱丝 胶原蛋白面膜-->
+					<a href="http://www.51mkf.com/shop/item-104546.html" target="_blank">
+						<div class="mkf_104546"></div>
+					</a>
+					<!--可莱丝  水润补湿面膜-->
+					<a href="http://www.51mkf.com/shop/item-104075.html" target="_blank">
+						<div class="mkf_104075"></div>
+					</a>
+				</div>
+				<div id="a_item2_02">
+					<!--倍轻松-->
+					<a href="http://www.51mkf.com/shop/item-102887.html" target="_blank">
+						<div class="mkf_102887"></div>
+					</a>
+					<!--森田-->
+					<a href="http://www.51mkf.com/shop/item-104068.html" target="_blank">
+						<div class="mkf_104068"></div>
+					</a>
+					<!--dostyle 电火锅-->
+					<a href="http://www.51mkf.com/shop/item-108512.html" target="_blank">
+						<div class="mkf_108512"></div>
+					</a>
+					<!--dostyle 电热锅-->
+					<a href="http://www.51mkf.com/shop/item-108509.html" target="_blank">
+						<div class="mkf_108509"></div>
+					</a>
+				</div>
+			</div>
+		<!--</div>-->
+
+	</body>
+	<script type="text/javascript">
+		function setBodyWidth() {
+			var barWidthHelper = document.createElement('div');
+			barWidthHelper.style.cssText = "overflow:scroll; width:100px; height:100px;";
+			document.body.appendChild(barWidthHelper);
+			var barWidth = barWidthHelper.offsetWidth - barWidthHelper.clientWidth;
+			document.body.removeChild(barWidthHelper);
+			var bodyWidth = window.screen.availWidth - barWidth;
+			return bodyWidth;
+		}
+
+		$(document).ready(
+			function() {
+				var bodyWidth = setBodyWidth() + "px";
+				//document.body.style.width=bodyWidth;
+				$("body").css("width", bodyWidth);
+			}
+		);
+	</script>
+
+</html>

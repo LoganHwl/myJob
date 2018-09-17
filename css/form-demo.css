@@ -1,0 +1,96 @@
+ * {
+ 	margin: 0px;
+ 	padding: 0px;
+ }
+ 
+ body {
+ 	display: block;
+ }
+ 
+ .main {
+ 	min-width: 320px;
+ 	/*max-width: 640px;*/
+ 	margin: 0 auto;
+ }
+ 
+ .i_coming {
+ 	position: relative;
+ 	width: 100%;
+ 	height: auto;
+ 	overflow: hidden;
+ 	line-height: 0;
+ }
+ 
+ img {
+ 	margin: 0;
+ 	padding: 0;
+ 	width: 100%;
+ 	height: auto;
+ }
+ 
+ .input_phone {
+ 	position: absolute;
+ 	width: 61%;
+ 	top: 62.45%;
+ 	left: 19.5%;
+ 	height: 5.2%;
+ 	border: none;
+ 	border-radius: 3px;
+ 	outline: none;
+ 	display: block;
+ 	text-align:center;
+ 	font-size: 4vw;
+ }
+ .input_code{
+ 	position: absolute;
+ 	width: 38.42%;
+ 	top: 69.2%;
+ 	left: 19.5%;
+ 	height: 5.2%;
+ 	border: none;
+ 	border-radius: 3px;
+ 	outline: none;
+ 	display: block;
+	text-align:center;
+	font-size: 4vw;
+ }
+ .get_code{
+ 	position: absolute;
+ 	width: 21.5%;
+ 	top: 69.2%;
+ 	left: 59%;
+ 	height: 5.2%;
+ 	border: none;
+ 	border-radius: 4px;
+ 	outline: none;
+ 	display: block;
+ 	background: linear-gradient(to right,#F0CDB9,#B57C5E);
+ 	font-size: 3.3vw;
+ 	color: dimgray;
+ }
+.submit{
+	position: absolute;
+ 	width: 62%;
+ 	top: 82%;
+ 	left: 19.5%;
+ 	height: 6%;
+ 	border: none;
+ 	border-radius: 4px;
+ 	outline: none;
+ 	display: block;
+ 	background: linear-gradient(to right,#F0CDB9,#B57C5E);
+ 	font-size: 4.5vw;
+}
+.pay{
+	position: absolute;
+ 	width: 91.5%;
+ 	top: 92%;
+ 	left: 4.3%;
+ 	height: 5.5%;
+ 	border: none;
+ 	border-radius: 4px;
+ 	outline: none;
+ 	display: block;
+ 	background: linear-gradient(to right,#F0CDB9,#B57C5E);
+ 	font-size: 4.5vw;
+}

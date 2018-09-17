@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/form-demo.css" />
+		<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+		<script src="../../js/jquery-1.8.2.min.js"></script>
+		<!--<script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>-->
+		<script src="../../js/form-control.js"></script>
+	</head>
+
+	<body>
+		<!--<div class="main">-->
+			<div class="i_coming">
+				<img class="iphone_img" src="../../img/20180908/00000.png" />
+				
+					<input class="input_phone" type="tel" name="phoneNum" id="phoneNum" maxlength="11" placeholder="请输入手机号码" />
+				
+				<input class="input_code" type="text" name="inputCode" id="inputCode" required placeholder="请输入验证码" />
+					<input class="get_code" type="button" value="获取验证码" name="code" id="code" disabled="disabled">
+				<button class="submit" id="sure">马上预订</button>
+
+			</div>
+		<!--</div>-->
+	</body>
+	<!--<script type="text/javascript">
+		wx.config({
+			debug: false,
+			appId: '', //后台获取
+			timestamp: '', //后台获取
+			nonceStr: '', //后台获取
+			signature: '', //后台获取
+			jsApiList: [ // 所有要调用的 API 都要加到这个列表中
+				'checkJsApi'
+
+			],
+		});
+
+		wx.ready(function() { //必须写在wx.ready里面
+			wx.chooseWXPay({
+				timestamp: 0, // 支付签名时间戳，注意微信jssdk中的所有使用timestamp字段均为小写。但最新版的支付后台生成签名使用的timeStamp字段名需大写其中的S字符
+				nonceStr: '', // 支付签名随机串，不长于 32 位
+				package: '', // 统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=\*\*\*）
+				signType: '', // 签名方式，默认为'SHA1'，使用新版支付需传入'MD5'
+				paySign: '', // 支付签名
+				success: function(res) {
+					// 支付成功后的回调函数
+				}
+			});
+			wx.updateAppMessageShareData({
+				title: 'sdfghgkj', // 分享标题
+				desc: '', // 分享描述
+				link: '', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+				imgUrl: '', // 分享图标
+			}, function(res) {
+				//这里是回调函数 
+			});
+			wx.onMenuShareAppMessage({
+				title: '', // 分享标题
+				desc: '', // 分享描述
+				link: '', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致（二级域名一致）
+				imgUrl: '', // 分享图标最大300*300（二级域名一致）
+				dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+				success: function() {
+					// 用户确认分享后执行的回调函数
+					// alert('成功');
+				},
+				cancel: function() {
+					// 用户取消分享后执行的回调函数
+				}
+			});
+		});
+	</script>-->
+
+</html>

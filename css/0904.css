@@ -1,0 +1,178 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a:link {
+	color: #181818;
+}
+
+a:visited {
+	color: #181818;
+}
+
+a:hover {
+	color: #181818;
+}
+
+img {
+	display: block;
+}
+
+#main {
+	min-width: 1000px;
+	position: relative;
+}
+
+#head {
+	width: 100%;
+	height: 738px;
+	background: url(../img/20180904/9_01.jpg) top center no-repeat;
+	position: relative;
+}
+
+#mate {
+	width: 100%;
+	height: 693px;
+	border: none;
+	margin-top: 0;
+	background: url(../img/20180904/9.9促销.png) top center no-repeat;
+}
+
+#nova {
+	width: 100%;
+	height: 682px;
+	border: none;
+	margin-top: 0;
+	background: url(../img/20180904/9_03.jpg) top center no-repeat;
+}
+
+#edifier {
+	width: 100%;
+	height: 721px;
+	border: none;
+	margin-top: 0;
+	background: url(../img/20180904/9_04.jpg) top center no-repeat;
+}
+
+#mini2 {
+	width: 100%;
+	height: 693px;
+	border: none;
+	margin-top: 0;
+	background: url(../img/20180904/9_05.jpg) top center no-repeat;
+}
+
+#royalstar {
+	width: 100%;
+	height: 759px;
+	border: none;
+	margin-top: 0;
+	background: url(../img/20180904/9_06.jpg) top center no-repeat;
+}
+
+.a_mate,
+.a_nova,
+.a_edifier,
+.a_mini2,
+.a_royalstar {
+	width: 1161px;
+	height: 544px;
+	margin: auto;
+	clear: both;
+	background-color: yellow;
+}
+
+.mkf_117427,
+.mkf_104408,
+.mkf_111829,
+.mkf_111535,
+.mkf_108082 {
+	width: 1161px;
+	height: 544px;
+	margin-left: 0;
+	background: pink;
+}
+
+#item1 {
+	width: 100%;
+	height: 420px;
+	border: none;
+	margin-top: 0;
+	background: url(../img/20180904/9_07.jpg) top center no-repeat;
+}
+
+#item2 {
+	width: 100%;
+	height: 927px;
+	border: none;
+	margin-top: 0;
+	background: url(../img/20180904/9_08.jpg) top center no-repeat;
+}
+
+.mkf_102887,
+.mkf_109776,
+.mkf_107911 {
+	left: 20%;
+}
+
+.mkf_112307,
+.mkf_104068,
+.mkf_113964 {
+	left: 35.2%;
+}
+
+.mkf_104546,
+.mkf_108512,
+.mkf_103393 {
+	left: 50.3%;
+}
+
+.mkf_108467,
+.mkf_104075,
+.mkf_108509 {
+	left: 65.5%;
+}
+
+
+.mkf_113964,
+.mkf_103393,
+.mkf_108467,
+
+.mkf_112307,
+.mkf_104546,
+.mkf_104075,
+
+.mkf_104068,
+.mkf_108512,
+.mkf_108509  {
+	width: 269px;
+	height: 400px;
+	background: pink;
+	float: left;
+	margin-left: 19px;
+	display: block;
+}
+.mkf_107911,
+.mkf_109776,
+.mkf_102887{
+	width: 269px;
+	height: 400px;
+	background: pink;
+	float: left;
+	display: block;
+}
+
+
+#a_item1_01,
+#a_item2_01,
+#a_item2_02 {
+	width: 1137px;
+	height: 400px;
+	margin: auto;
+	clear: both;
+}
+
+#a_item2_02 {
+	margin-top: 21px;
+}
