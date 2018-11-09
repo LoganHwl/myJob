@@ -1,0 +1,524 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>迈客风---京选京造</title>
+		<link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_892497_b7kulyibuqp.css">
+
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			a:link {
+				color: #181818;
+			}
+			
+			a:visited {
+				color: #181818;
+			}
+			
+			a:hover {
+				color: #181818;
+			}
+			
+			div {
+				display: block;
+			}
+			
+			#head {
+				width: 100%;
+				height: 621px;
+				background: url(../../img/20181026/jx_01.jpg) top center no-repeat;
+				position: relative;
+			}
+			
+			#head2 {
+				width: 100%;
+				height: 212px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_02.jpg) top center no-repeat;
+			}
+			
+			#jx1 {
+				width: 100%;
+				height: 477px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_03.jpg) top center no-repeat;
+			}
+			
+			#jx2 {
+				width: 100%;
+				height: 476px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_04.jpg) top center no-repeat;
+			}
+			
+			#jx3 {
+				width: 100%;
+				height: 475px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_05.jpg) top center no-repeat;
+			}
+			
+			#jx4 {
+				width: 100%;
+				height: 490px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_06.jpg) top center no-repeat;
+			}
+			
+			#jx5 {
+				width: 100%;
+				height: 491px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_07.jpg) top center no-repeat;
+			}
+			#jx6 {
+				width: 100%;
+				height: 490px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_08.png) top center no-repeat;
+			}
+			#jx7 {
+				width: 100%;
+				height: 489px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_09.jpg) top center no-repeat;
+			}
+			
+			#jx8 {
+				width: 100%;
+				height: 491px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_10.jpg) top center no-repeat;
+			}
+			#jx9 {
+				width: 100%;
+				height: 490px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_11.jpg) top center no-repeat;
+			}
+			#jx10 {
+				width: 100%;
+				height: 623px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181026/jx_12.jpg) top center no-repeat;
+			}
+			.mkf_jx1,
+			.mkf_jx2,
+			.mkf_jx3{
+				position: absolute;
+				margin-left: 467px;
+				width: 971px;
+				height: 446px;
+				border-radius: 10px;
+			}
+			
+			
+			.mkf_jx4_1,
+			.mkf_jx5_1,
+			.mkf_jx6_1,
+			.mkf_jx7_1,
+			.mkf_jx8_1,
+			.mkf_jx9_1,
+			.mkf_jx10_1 {
+				position: absolute;
+				width: 319px;
+				height: 476px;
+				margin-left: 462px;
+				/*background: pink;*/
+				border-radius: 8px;
+			}
+			
+			.mkf_jx4_2,
+			.mkf_jx5_2,
+			.mkf_jx6_2,
+			.mkf_jx7_2,
+			.mkf_jx8_2,
+			.mkf_jx9_2,
+			.mkf_jx10_2 {
+				position: absolute;
+				width: 319px;
+				height: 476px;
+				margin-left: 797px;
+				/*background: pink;*/
+				border-radius: 8px;
+			}
+			
+			.mkf_jx4_3,
+			.mkf_jx5_3,
+			.mkf_jx6_3,
+			.mkf_jx7_3,
+			.mkf_jx8_3,
+			.mkf_jx9_3,
+			.mkf_jx10_3 {
+				position: absolute;
+				width: 319px;
+				height: 476px;
+				margin-left: 1129px;
+				/*background: pink;*/
+				border-radius: 8px;
+			}
+			
+			.mkf_jx1 {
+				margin-top: 9px;
+			}
+			.mkf_jx2 {
+				margin-top: 7px;
+			}
+			.mkf_jx3 {
+				margin-top: 7px;
+			}
+			#name{
+				background: #841cba;
+				margin-top: 300px;
+				height: 115px;
+			}
+			p{
+				font-family: arial;
+				font-size: 20px;
+				padding: 0 20px;
+				color: white;
+			}
+			i{
+				color: white;
+			}
+			.truePrice i{
+				color: red;
+			}
+			.oldPrice{
+				padding: 3px 20px 0;
+				font-size: 14px;
+				color: white;
+				text-decoration:line-through;
+			}
+			.truePrice{
+				padding: 0 0 0 20px;
+				font-size: 18px;
+				color: white;
+			}
+			span{
+				font-size: 40px;
+				color: red;
+			}
+			.one_row{
+				text-align: center;
+				padding: 0 20px 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--<div id="main">-->
+		<div id="head"></div>
+		<div id="head2"></div>
+		<!--item1-->
+		<div id="jx1">
+			
+			<div class="a_jx1">
+				<!--<i class="iconfont icon-zhijiang-02" style="color: white;font-size: 38px;margin-left: 500px;z-index: 999;display: block;"></i>-->
+				<a href="http://www.51mkf.com/shop/item-111729.html" target="_blank">
+					<div class="mkf_jx1"></div>
+				</a>
+			</div>
+		</div>
+		<!--item2-->
+		<div id="jx2">
+			<div id="a_jx2">
+				<a href="http://www.51mkf.com/shop/item-119901.html" target="_blank">
+					<div class="mkf_jx2"></div>
+				</a>
+			</div>
+
+		</div>
+		<!--item3-->
+		<div id="jx3">
+			<div class="a_jx3">
+				<a href="http://www.51mkf.com/shop/item-115041.html" target="_blank">
+					<div class="mkf_jx3"></div>
+				</a>
+			</div>
+		</div>
+		<!--综合2-->
+		<div id="jx4">
+			<!--mkf_item4_1-->
+			<div id="a_jx4">
+				
+				<a href="http://www.51mkf.com/shop/item-115157.html" target="_blank">
+					
+					<div class="mkf_jx4_1">
+						<div id="name">
+							<p>京选声波电动牙刷杜邦软刷毛ET201</p>
+							<p class="oldPrice">原价:<i>￥299.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">199.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<!--mkf_item4_2-->
+				<a href="http://www.51mkf.com/shop/item-117212.html" target="_blank">
+					<div class="mkf_jx4_2">
+						<div id="name">
+							<p class="one_row">京造 微粒子多功能颈枕</p>
+							<p class="oldPrice" style="padding: 3px 42px 0;">原价:<i>￥59.90</i></p>
+							<p class="truePrice" style="padding: 3px 42px 0;">活动价:<i> ￥<span class="">49.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<!--mkf_item4_3-->
+				<a href="http://www.51mkf.com/shop/item-119906.html" target="_blank">
+					<div class="mkf_jx4_3">
+						<div id="name">
+							<p class="one_row">京选 超声波香薰机加湿器</p>
+							<p class="oldPrice" style="padding: 3px 42px 0;">原价:<i>￥79.00</i></p>
+							<p class="truePrice" style="padding: 3px 42px 0;">活动价:<i> ￥<span class="">69.00</span></i></p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--item5-->
+		<div id="jx5">
+			<!--mkf_item5_1-->
+			<div id="a_jx5">
+				<a href="http://www.51mkf.com/shop/item-117200.html" target="_blank">
+					<div class="mkf_jx5_1">
+						<div id="name">
+							<p>京造 微电流滚轮V脸美容器 脸部按摩仪 面部提拉紧致按摩器</p>
+							<p class="oldPrice">原价:<i>￥199.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">179.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<!--mkf_item5_2-->
+				<a href="http://www.51mkf.com/shop/item-120255.html" target="_blank">
+					<div class="mkf_jx5_2">
+						<div id="name">
+							<p>京造 随身按摩贴 低频脉冲按摩仪 全身通用魔力贴 樱花粉</p>
+							<p class="oldPrice">原价:<i>￥109.00</i></p>
+							<p class="truePrice">活动价:<i>   ￥<span class="">99.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<!--mkf_item5_3-->
+				<a href="http://www.51mkf.com/shop/item-110984.html" target="_blank">
+					<div class="mkf_jx5_3">
+						<div id="name">
+							<p>dostyle DM270GC 27英寸1800R曲率 电竞吃鸡显示器</p>
+							<p class="oldPrice">原价:<i>￥1499.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">1299.00</span></i></p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+		</div>
+		<!--item6-->
+		<div id="jx6">
+			<!--mkf_item6_1-->
+			<div id="a_jx6">
+				<a href="http://www.51mkf.com/shop/item-118570.html" target="_blank">
+					<div class="mkf_jx6_1">
+						<div id="name">
+							<p>dostyle 京选 KB202 2.4G无线键鼠套装 素雅白</p>
+							<p class="oldPrice">原价:<i>￥79.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">69.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<!--mkf_item6_2-->
+				<a href="http://www.51mkf.com/shop/item-117188.html" target="_blank">
+					<div class="mkf_jx6_2">
+						<div id="name">
+							<p>京造 硅胶声波洁面仪 电动毛孔清洁美容按摩洗脸仪 玫瑰红</p>
+							<p class="oldPrice">原价:<i>￥179.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">158.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<!--mkf_jx6_3-->
+				<a href="http://www.51mkf.com/shop/item-120243.html" target="_blank">
+					<div class="mkf_jx6_3">
+						<div id="name">
+							<p>京造 家用垃圾桶 简约素色/客厅卧室厨房卫生间/易擦洗 大号</p>
+							<p class="oldPrice">原价:<i>￥49.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">30.80</span></i></p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+		</div>
+		<!--jx7-->
+		<div id="jx7">
+
+			<div id="a_jx7">
+				<!--mkf_item7_1-->
+				<a href="http://www.51mkf.com/shop/item-110727.html" target="_blank">
+					<div class="mkf_jx7_1">
+						<div id="name">
+							<p>京造 极简电动牙刷 充电式成人声波震动牙刷 白色 刷头2支装</p>
+							<p class="oldPrice">原价:<i>￥59.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">49.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<!--mkf_item7_2-->
+				<a href="http://www.51mkf.com/shop/item-120518.html" target="_blank">
+					<div class="mkf_jx7_2">
+						<div id="name">
+							<p class="one_row" style="padding: 0 15px 20px">京造 蚕丝薄被200x230cm湖绿色</p>
+							<p class="oldPrice" style="padding: 3px 42px 0;">原价:<i>￥459.00</i></p>
+							<p class="truePrice" style="padding: 3px 42px 0;">活动价:<i> ￥<span class="">259.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<!-- mkf_item7_3-->
+				<a href="http://www.51mkf.com/shop/item-119201.html" target="_blank">
+					<div class="mkf_jx7_3">
+						<div id="name">
+							<p>京造 除螨吸尘器 手持家用床上除螨仪 小型吸尘器</p>
+							<p class="oldPrice">原价:<i>￥499.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">399.00</span></i></p>
+						</div>
+					</div>
+				</a>
+			</div>
+
+		</div>
+		<!--jx8-->
+		<div id="jx8">
+			<div class="a_jx8">
+				<a href="http://www.51mkf.com/shop/item-120519.html" target="_blank">
+					<div class="mkf_jx8_1">
+						<div id="name">
+							<p class="one_row">京造 12升电烤箱白色</p>
+							<p class="oldPrice" style="padding: 3px 42px 0;">原价:<i>￥299.00</i></p>
+							<p class="truePrice" style="padding: 3px 42px 0;">活动价:<i> ￥<span class="">229.00</span></i></p>
+						</div>						
+					</div>
+				</a>
+				<a href="http://www.51mkf.com/shop/item-120508.html" target="_blank">
+					<div class="mkf_jx8_2">
+					<div id="name">
+							<p>京造 便携车载吸尘器  无线手提 迷你便携大吸力</p>
+							<p class="oldPrice">原价:<i>￥388.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">359.00</span></i></p>
+						</div></div>
+				</a>
+				<a href="http://www.51mkf.com/shop/item-120520.html" target="_blank">
+					<div class="mkf_jx8_3">
+						<div id="name">
+							<p class="one_row">京造 一体式双肩书包藏青色</p>
+							<p class="oldPrice" style="padding: 3px 42px 0;">原价:<i>￥179.00</i></p>
+							<p class="truePrice" style="padding: 3px 42px 0;">活动价:<i> ￥<span class="">129.00</span></i></p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+		<!--jx8-->
+		<div id="jx9">
+			<div class="a_jx9">
+				<a href="http://www.51mkf.com/shop/item-120509.html" target="_blank">
+					<div class="mkf_jx9_1">
+						<div id="name">
+							<p>京造 螺丝刀套装 精密电动螺丝刀 手机/相机/电脑维修工具</p>
+							<p class="oldPrice">原价:<i>￥129.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">89.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<a href="http://www.51mkf.com/shop/item-120512.html" target="_blank">
+					<div class="mkf_jx9_2">
+						<div id="name">
+							<p>京造 车载超声波香薰机（浅绿色）</p>
+							<p class="oldPrice">原价:<i>￥129.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">99.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<a href="http://www.51mkf.com/shop/item-120513.html" target="_blank">
+					<div class="mkf_jx9_3">
+						<div id="name">
+							<p>京造 金属签字笔 中性笔0.5mm油墨 3支混装</p>
+							<p class="oldPrice">原价:<i>￥99.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">79.00</span></i></p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<!--jx8-->
+		<div id="jx10">
+			<div class="a_jx10">
+				<a href="http://www.51mkf.com/shop/item-117207.html" target="_blank">
+					<div class="mkf_jx10_1">
+						<div id="name">
+							<p>京造 记忆绵枕头 慢回弹记忆枕芯</p>
+							<p class="oldPrice">原价:<i>￥99.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">79.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<a href="http://www.51mkf.com/shop/item-120514.html" target="_blank">
+					<div class="mkf_jx10_2">
+						<div id="name">
+							<p>京造 静音迷你节能暖风机 阻燃材料 断电保护 办公室宿舍家用</p>
+							<p class="oldPrice">原价:<i>￥149.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">129.00</span></i></p>
+						</div>
+					</div>
+				</a>
+				<a href="http://www.51mkf.com/shop/item-120516.html" target="_blank">
+					<div class="mkf_jx10_3">
+						<div id="name">
+							<p>京造 成人/婴童理发器  电推剪发器 3种造型梳 粉色</p>
+							<p class="oldPrice">原价:<i>￥129.00</i></p>
+							<p class="truePrice">活动价:<i> ￥<span class="">119.00</span></i></p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!--</div>-->
+
+	</body>
+	<script type="text/javascript">
+		function setBodyWidth() {
+			var barWidthHelper = document.createElement('div');
+			barWidthHelper.style.cssText = "overflow:scroll; width:100px; height:100px;";
+			document.body.appendChild(barWidthHelper);
+			var barWidth = barWidthHelper.offsetWidth - barWidthHelper.clientWidth;
+			document.body.removeChild(barWidthHelper);
+			var bodyWidth = window.screen.availWidth - barWidth;
+			return bodyWidth;
+		}
+
+		$(document).ready(
+			function() {
+				var bodyWidth = setBodyWidth() + "px";
+				//document.body.style.width=bodyWidth;
+				$("body").css("width", bodyWidth);
+			}
+		);
+	</script>
+
+</html>

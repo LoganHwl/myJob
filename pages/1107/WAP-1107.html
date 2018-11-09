@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<script type="text/javascript" src="../../js/js.js"></script>
+		<script src="http://www.51mkf.com/data/resource/js/jquery.js"></script>
+		<title>迈客风 -- 潮流家电，乐享优惠</title>
+		<style>
+			html {
+				padding-bottom: 0;
+				width: 100%;
+			}
+			
+			a:link {
+				text-decoration: none;
+			}
+			
+			body {
+				background: #f0f1f0;
+				font-family: 微软雅黑;
+				padding: 0;
+				margin: 0;
+			}
+			
+			.hdunit {
+				width: 100%;
+				height: 100%;
+				position: relative;
+				background: #d8f2ff;
+			}
+			
+			.hdunit img {
+				width: 100%;
+				display: block;
+			}
+			
+			.hdunit a {
+				position: absolute;
+			}
+			
+			.t11 {
+				width: 89.2vw;
+				height: 31.5vw;
+				top: 0vw;
+				left: 5.18vw;
+				border-radius: 10px;
+				display: block;
+			}
+			
+			.t11 .describe {
+				font-family: "思源黑体 CN Medium";
+				background: white;
+				margin: 3vw auto 0;
+				width: 54%;
+				height: 18vw;
+				font-weight: bolder;
+				float: left;
+			}
+			
+			.t11 ._goods_name {
+				font-family: "思源黑体 CN Medium";
+				font-size: 3.8vw;
+				padding: 0 2vw 0 0;
+				color: orange;
+				height: 10vw;
+				overflow: hidden;
+				display: block;
+				text-align: right;
+			}
+			
+			.t11 .truePrice {
+				color: orangered;
+				background: none;
+				font-size: 4vw;
+				display: block;
+				margin: 0 0 0 -3vw;
+				text-align: right;
+				width: 100%;
+			}
+			
+			.t11 b {
+				font-size: 6vw;
+			}
+			
+			.t21 {
+				width: 45.4vw;
+				height: 62.2vw;
+				top: 0vw;
+				left: 3.5vw;
+				/*background: green;*/
+				border-radius: 10px;
+			}
+			
+			.t22 {
+				width: 45.4vw;
+				height: 62.2vw;
+				top: 0vw;
+				left: 51.3vw;
+				border-radius: 10px;
+				/*background: green;*/
+			}
+			
+			.t41 {
+				width: 31.2vw;
+				height: 47.2vw;
+				left: 1.2vw;
+				/*background: goldenrod;*/
+			}
+			
+			.t42 {
+				width: 30.7vw;
+				height: 47.2vw;
+				left: 34.6vw;
+				/*background: goldenrod;*/
+			}
+			
+			.t43 {
+				width: 31vw;
+				height: 47.2vw;
+				left: 67.5vw;
+				/*background: goldenrod;*/
+			}
+			
+			.t41,
+			.t42,
+			.t43 {
+				top: 0vw;
+			}
+			
+			.link2 img {
+				width: 95%;
+				height: 45vw;
+				margin: 1.5vw 1vw;
+				border-radius: 7PX;
+				display: block;
+			}
+			
+			.link2 .describe {
+				overflow: hidden;
+				width: 95%;
+				margin: 8px auto 0;
+				height: 12vw;
+				background: white;
+				padding: 0;
+			}
+			
+			.link2 ._goods_name {
+				width: 91%;
+				display: block;
+				margin: 0 auto;
+				font-size: 1.5vw;
+				color: orange;
+				text-decoration: none;
+				overflow: hidden;
+				height: 7.2vw;
+				line-height: 3.6vw;
+				background: none;
+			}
+			
+			.link2 .truePrice {
+				position: absolute;
+				left: 1vw;
+				top: 56.2vw;
+				width: 92%;
+				overflow: hidden;
+				height: 4vw;
+				color: orange;
+				font-size: 2.5vw;
+				font-weight: bolder;
+				line-height: 4vw;
+				background: none;
+				text-align: center;
+			}
+			
+			.link2 ._goods_price {
+				font-size: 4vw;
+			}
+			
+			.link4 img {
+				width: 98%;
+				height: 28.7vw;
+				margin: 0.3vw auto;
+				border-radius: 7PX;
+				display: block;
+			}
+			
+			.link4 .describe {
+				overflow: hidden;
+				width: 93%;
+				margin: 0 auto;
+				height: 10.5vw;
+				background: white;
+				padding: 0;
+			}
+			
+			.link4 ._goods_name {
+				width: 93%;
+				display: block;
+				margin: 0 auto;
+				font-size: 2vw;
+				color: black;
+				text-decoration: none;
+				overflow: hidden;
+				height: 7vw;
+				line-height: 3.6vw;
+				background: none;
+			}
+			
+			.link4 .truePrice {
+				position: absolute;
+				left: 2vw;
+				top: 36.4vw;
+				width: 92%;
+				overflow: hidden;
+				height: 3vw;
+				color: red;
+				font-size: 2vw;
+				line-height: 3vw;
+				padding-left: 0vw;
+				background: none;
+			}
+			
+			.link4 ._goods_price {
+				font-size: 3.5vw;
+			}
+			
+			.miaosha-1 {
+				float: left;
+				background: none;
+				width: 32.2vw;
+			}
+			
+			.miaosha-2 {
+				float: left;
+				background: none;
+				width: 33vw;
+			}
+			
+			.miaosha-3 {
+				float: left;
+				background: none;
+				width: 33.2vw;
+			}
+			
+			.num_1 {
+				display: block;
+				margin: -8vw auto 0;
+				width: 32.2vw;
+				height: 11vw;
+				text-align: center;
+				font-size: 5.5vw;
+				line-height: 8.5vw;
+				color: white;
+			}
+			
+			.num_2 {
+				display: block;
+				margin: -6vw auto 0;
+				background: none;
+				width: 33vw;
+				height: 10vw;
+				text-align: center;
+				font-size: 5.5vw;
+				line-height: 8.5vw;
+				color: white;
+			}
+			
+			.num_3 {
+				display: block;
+				margin: -6vw auto 0;
+				background: none;
+				width: 32vw;
+				height: 10vw;
+				text-align: center;
+				font-size: 5.5vw;
+				line-height: 8.5vw;
+				color: white;
+			}
+			
+			#a {
+				width: 32.4vw;
+				height: 11vw;
+				background: orange;
+				margin: -6vw 0 0 1.2vw;
+			}
+			
+			#b {
+				width: 32.8vw;
+				height: 11vw;
+				background: orange;
+				margin: -8vw 0 0 1.4vw;
+			}
+			
+			#c {
+				width: 31.8vw;
+				height: 11vw;
+				background: orange;
+				margin: -8vw 0 0 1.4vw;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="hdbox">
+
+			<div class="hdunit f1"><img src="../../img/20181107/jydqm_01.jpg"></div>
+			<div class="hdunit f2"><img src="../../img/20181107/jydqm_02.jpg"></div>
+
+			<!--活动区块-->
+
+			<div class="hdunit f3">
+				<img src="../../img/20181107/jydqm_03.jpg">
+				<a>
+					<div class="miaosha-1">
+						<div class="change" id="a">
+							<span class="num_1" id="num_1">10:00</span>
+						</div>
+					</div>
+					<div class="miaosha-2">
+						<div class="change" id="b">
+							<span class="num_2" id="num_2">15:00</span>
+						</div>
+					</div>
+					<div class="miaosha-3">
+						<div class="change" id="c">
+							<span class="num_3" id="num_3">20:00</span>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="hdunit f4"><img src="../../img/20181107/jydqm_04.jpg">
+				<div id="div1" style="display: none;">
+					<a class="link2 t21 _mkf_120315" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120315">
+						<img class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+						<div class="describe">
+							<span class="_goods_name">京选 超声波香薰机加湿器 京选 超声波香薰机加湿器</span>
+							<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+						</div>
+					</a>
+					<a class="link2 t22 _mkf_120071" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120071">
+						<img class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+						<div class="describe">
+							<span class="_goods_name">京选 超声波香薰机加湿器</span>
+							<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+						</div>
+					</a>
+				</div>
+
+				<div id="div2" style="display: none;">
+					<a class="link2 t21 _mkf_120250" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120250">
+						<img class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+						<div class="describe">
+							<span class="_goods_name">小熊（Bear）电热饭盒 1.3L单层双胆加热饭盒蒸热饭器可插电保温密封 不锈钢 DFH-S2016</span>
+							<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+						</div>
+					</a>
+					<a class="link2 t22 _mkf_118988" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=118988">
+						<img class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+						<div class="describe">
+							<span class="_goods_name">德尔玛（Deerma）加湿器 4.5L大容量 智能恒湿 家用静音迷你办公室卧室香薰加湿 LU300</span>
+							<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+						</div>
+					</a>
+				</div>
+
+				<div id="div3" style="display: none;">
+					<a class="link2 t21 _mkf_120316" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120316">
+						<img class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+						<div class="describe">
+							<span class="_goods_name">小熊煮蛋器ZDQ-2151</span>
+							<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+						</div>
+					</a>
+					<a class="link2 t22 _mkf_120317" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120317">
+						<img class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+						<div class="describe">
+							<span class="_goods_name">海尔榨汁机HBL-T061B</span>
+							<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="hdunit f5"><img src="../../img/20181107/jydqm_05.jpg">
+
+			</div>
+
+			<div class="hdunit f6"><img src="../../img/20181107/jydqm_06.jpg">
+				<a class="link1 t11 _mkf_105430" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=105430">
+					<div class="Imgage" style="float: left;width: 45%;">
+						<img style="height: 31.2vw;width: 88%;margin-top: 0.2vw;" class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					</div>
+
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+
+			</div>
+
+			<div class="hdunit f7"><img src="../../img/20181107/jydqm_07.jpg">
+				<a class="link1 t11 _mkf_105430" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=105430">
+					<div class="Imgage" style="float: left;width: 45%;">
+						<img style="height: 31.2vw;width: 88%;margin-top: 0.2vw;" class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					</div>
+
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+
+			<div class="hdunit f8"><img src="../../img/20181107/jydqm_08.jpg">
+				<a class="link1 t11 _mkf_108043" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=108043">
+					<div class="Imgage" style="float: left;width: 45%;">
+						<img style="height: 31.2vw;width: 88%;margin-top: 0.2vw;" class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					</div>
+
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+
+			<div class="hdunit f09"><img src="../../img/20181107/jydqm_09.jpg">
+				<a class="link4 t41 _mkf_120319" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120319">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_107668" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=107668">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_109019" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=109019">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f10"><img src="../../img/20181107/jydqm_10.jpg">
+				<a class="link4 t41 _mkf_106209" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=106209">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_120251" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120251">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_120070" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120070">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f11"><img src="../../img/20181107/jydqm_11.jpg">
+				<a class="link4 t41 _mkf_109062" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=109062">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_113544" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=113544">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_120259" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120259">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f12"><img src="../../img/20181107/jydqm_12.jpg"></div>
+
+			<div class="hdunit f13"><img src="../../img/20181107/jydqm_13.jpg">
+				<a class="link1 t11 _mkf_118362" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=118362">
+					<div class="Imgage" style="float: left;width: 45%;">
+						<img style="height: 31.2vw;width: 88%;margin-top: 0.2vw;" class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					</div>
+
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f14"><img src="../../img/20181107/jydqm_14.jpg">
+				<a class="link1 t11 _mkf_120320" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120320">
+					<div class="Imgage" style="float: left;width: 45%;">
+						<img style="height: 31.2vw;width: 88%;margin-top: 0.2vw;" class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					</div>
+
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f15"><img src="../../img/20181107/jydqm_15.jpg">
+				<a class="link4 t41 _mkf_116730" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=116730">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_108992" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=108992">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_109023" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=109023">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f16"><img src="../../img/20181107/jydqm_16.jpg">
+				<a class="link4 t41 _mkf_108558" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=108558">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_108512" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=108512">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_107289" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=107289">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f17"><img src="../../img/20181107/jydqm_17.jpg">
+				<a class="link4 t41 _mkf_107267" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=107267">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_120064" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120064">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_109032" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=109032">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f18"><img src="../../img/20181107/jydqm_18.jpg">
+				<a class="link4 t41 _mkf_105957" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=105957">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_117124" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=117124">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_120321" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120321">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f19"><img src="../../img/20181107/jydqm_19.jpg">
+				<a class="link4 t41 _mkf_102884" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=102884">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_120323" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120323">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_120324" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120324">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f20"><img src="../../img/20181107/jydqm_20.jpg">
+				<a class="link4 t41 _mkf_105217" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=105217">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_120325" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120325">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_120326" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120326">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f21"><img src="../../img/20181107/jydqm_21.jpg"></div>
+			<div class="hdunit f22"><img src="../../img/20181107/jydqm_22.jpg">
+				<a class="link1 t11 _mkf_120328" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120328">
+					<div class="Imgage" style="float: left;width: 45%;">
+						<img style="height: 31.2vw;width: 88%;margin-top: 0.2vw;" class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					</div>
+
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f23"><img src="../../img/20181107/jydqm_23.jpg">
+				<a class="link1 t11 _mkf_105424" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=105424">
+					<div class="Imgage" style="float: left;width: 45%;">
+						<img style="height: 31.2vw;width: 88%;margin-top: 0.2vw;" class="_goods_img" src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					</div>
+
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">秒杀价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f24"><img src="../../img/20181107/jydqm_24.jpg">
+				<a class="link4 t41 _mkf_105469" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=105469">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_113610" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=113610">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_114796" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=114796">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f25"><img src="../../img/20181107/jydqm_25.jpg">
+				<a class="link4 t41 _mkf_105417" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=105417">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_120330" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120330">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_113383" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=113383">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f26"><img src="../../img/20181107/jydqm_26.jpg">
+				<a class="link4 t41 _mkf_120331" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120331">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_120252" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120252">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_120253" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120253">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f27"><img src="../../img/20181107/jydqm_27.jpg">
+				<a class="link4 t41 _mkf_5563521" target="_blank" href="https://item.jd.com/5563521.html">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_120255" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120255">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_120256" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120256">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f28"><img src="../../img/20181107/jydqm_28.jpg">
+				<a class="link4 t41 _mkf_120257" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120257">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_109071" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=109071">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_119010" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=119010">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/08/3_05882465505431776_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+			<div class="hdunit f29"><img src="../../img/20181107/jydqm_29.jpg">
+				<a class="link4 t41 _mkf_109076" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=109076">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t42 _mkf_120354" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120354">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+				<a class="link4 t43 _mkf_120355" target="_blank" href="http://www.51mkf.com/wap/tmpl/product_detail.html?goods_id=120355">
+					<img class="_goods_img " src="http://www.51mkf.com/data/upload/shop/store/goods/3/2018/10/3_05936216730745519_360.jpg" />
+					<div class="describe">
+						<span class="_goods_name">京选 超声波香薰机加湿器</span>
+						<span class="truePrice">活动价:￥<b class="_goods_price">69.00</b></span>
+					</div>
+				</a>
+			</div>
+
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		function changeBg() {
+			var div1 = document.getElementById("div1");
+			var div2 = document.getElementById("div2");
+			var div3 = document.getElementById("div3");
+			var date = new Date(),
+				time = date.getHours();
+			if(time >= 10 && time < 15) {
+				div1.setAttribute("style", "display");
+				div2.setAttribute("style", "display:none");
+				div3.setAttribute("style", "display:none");
+
+				document.getElementById("c").setAttribute("style", "background: orange;");
+				document.getElementById("num_3").setAttribute("style", "color: white;");
+				document.getElementById("c").onclick = function() {
+					alert('活动还没有开始呢')
+				};
+				document.getElementById("b").onclick = function() {
+					alert('活动还没有开始呢')
+				};
+
+				document.getElementById("a").setAttribute("style", "background: #fdd399");
+				document.getElementById("num_1").setAttribute("style", "color: orange;");
+			} else if(time >= 15 && time < 20) {
+				div1.setAttribute("style", "display:none");
+				div2.setAttribute("style", "display");
+				div3.setAttribute("style", "display:none");
+				document.getElementById("c").onclick = function() {
+					alert('活动还没有开始呢')
+				};
+				document.getElementById("a").onclick = function() {
+					alert('活动已结束')
+				};
+				document.getElementById("a").setAttribute("style", "background: orange");
+				document.getElementById("num_1").setAttribute("style", "color: white;");
+
+				document.getElementById("b").setAttribute("style", "background: #fdd399");
+				document.getElementById("num_2").setAttribute("style", "color: orange;");
+			} else {
+				div1.setAttribute("style", "display:none");
+				div2.setAttribute("style", "display:none");
+				div3.setAttribute("style", "display");
+
+				document.getElementById("a").onclick = function() {
+					alert('活动已结束')
+				};
+				document.getElementById("b").onclick = function() {
+					alert('活动已结束')
+				};
+				document.getElementById("b").setAttribute("style", "background: orange");
+				document.getElementById("num_2").setAttribute("style", "color: white;");
+
+				document.getElementById("c").setAttribute("style", "background: #fdd399;");
+				document.getElementById("num_3").setAttribute("style", "color: orange;");
+			}
+
+		}
+		changeBg();
+	</script>
+
+</html>

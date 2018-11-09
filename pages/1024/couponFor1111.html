@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="../../css/1111.css" />-->
+
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			/*html,
+			body {
+				width: 100%;
+				height: 100%;
+			}*/
+			
+			a:link {
+				color: #181818;
+			}
+			
+			a:visited {
+				color: #181818;
+			}
+			
+			a:hover {
+				color: #181818;
+			}
+			
+			img {
+				display: block;
+			}
+			
+			#head {
+				width: 100%;
+				height: 706px;
+				background: url(../../img/20181024/yhq_01.jpg) top center no-repeat;
+				position: relative;
+			}
+			
+			#item1 {
+				width: 100%;
+				height: 574px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181024/yhq_02.jpg) top center no-repeat;
+			}
+			
+			#item2 {
+				width: 100%;
+				height: 526px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181024/yhq_03.jpg) top center no-repeat;
+			}
+			
+			#item3 {
+				width: 100%;
+				height: 536px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181024/yhq_04.jpg) top center no-repeat;
+			}
+			
+			#item4 {
+				width: 100%;
+				height: 541px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181024/yhq_05.jpg) top center no-repeat;
+			}
+			
+			#item5 {
+				width: 100%;
+				height: 535px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181024/yhq_06.jpg) top center no-repeat;
+			}
+			
+			#item6 {
+				width: 100%;
+				height: 548px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181024/yhq_07.jpg) top center no-repeat;
+			}
+			
+			#item7 {
+				width: 100%;
+				height: 535px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181024/yhq_08.jpg) top center no-repeat;
+			}
+			
+			#item8 {
+				width: 100%;
+				height: 684px;
+				border: none;
+				margin-top: 0;
+				background: url(../../img/20181024/yhq_09.jpg) top center no-repeat;
+			}
+			
+			.mkf_item1,
+			.mkf_item3,
+			.mkf_item8 {
+				position: absolute;
+				margin-left: 550px;
+				width: 817px;
+				height: 249px;
+				/*background: pink;*/
+			}
+			
+			.mkf_item2_1,
+			.mkf_item4_1,
+			.mkf_item5_1,
+			.mkf_item6_1,
+			.mkf_item7_1 {
+				position: absolute;
+				width: 345px;
+				height: 206px;
+				/*background: pink;*/
+			}
+			
+			.mkf_item2_2,
+			.mkf_item4_2,
+			.mkf_item5_2,
+			.mkf_item6_2,
+			.mkf_item7_2 {
+				position: absolute;
+				width: 345px;
+				height: 206px;
+				/*background: pink;*/
+			}
+			
+			.mkf_item2_3,
+			.mkf_item4_3,
+			.mkf_item5_3,
+			.mkf_item7_3 {
+				position: absolute;
+				width: 345px;
+				height: 206px;
+				/*background: pink;*/
+			}
+			
+			.mkf_item1 {
+				margin-top: 241px;
+			}
+			
+			.mkf_item2_1 {
+				margin-top: 206px;
+				margin-left: 407px;
+			}
+			
+			.mkf_item2_2 {
+				margin-top: 206px;
+				margin-left: 774px;
+			}
+			
+			.mkf_item2_3 {
+				margin-top: 206px;
+				margin-left: 1137px;
+			}
+			
+			.mkf_item3 {
+				margin-top: 196px;
+			}
+			
+			.mkf_item4_1 {
+				margin-top: 218px;
+				margin-left: 416px;
+			}
+			
+			.mkf_item4_2 {
+				margin-top: 218px;
+				margin-left: 777px;
+			}
+			
+			.mkf_item4_3 {
+				margin-top: 218px;
+				margin-left: 1137px;
+			}
+			
+			.mkf_item5_1 {
+				margin-top: 214px;
+				margin-left: 416px;
+			}
+			
+			.mkf_item5_2 {
+				margin-top: 214px;
+				margin-left: 779px;
+			}
+			
+			.mkf_item5_3 {
+				margin-top: 214px;
+				margin-left: 1142px;
+			}
+			
+			.mkf_item6_1 {
+				margin-top: 201px;
+				margin-left: 550px;
+				width: 396px;
+				height: 237px;
+			}
+			
+			.mkf_item6_2 {
+				margin-top: 201px;
+				margin-left: 967px;
+				width: 396px;
+				height: 237px;
+			}
+			
+			.mkf_item7_1 {
+				margin-top: 205px;
+				margin-left: 416px;
+			}
+			
+			.mkf_item7_2 {
+				margin-top: 205px;
+				margin-left: 779px;
+			}
+			
+			.mkf_item7_3 {
+				margin-top: 205px;
+				margin-left: 1142px;
+			}
+			
+			.mkf_item8 {
+				margin-top: 185px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<!--<div id="main">-->
+		<div id="head"></div>
+		<!--item1-->
+		<div id="item1">
+			<div class="a_item1">
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=168" target="_blank">
+					<div class="mkf_item1"></div>
+				</a>
+			</div>
+		</div>
+		<!--item2-->
+		<div id="item2">
+			<div id="a_item2">
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=150" target="_blank">
+					<div class="mkf_item2_1"></div>
+				</a>
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=157" target="_blank">
+					<div class="mkf_item2_2"></div>
+				</a>
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=152" target="_blank">
+					<div class="mkf_item2_3"></div>
+				</a>
+			</div>
+
+		</div>
+		<!--item3-->
+		<div id="item3">
+			<div class="a_item3">
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=153" target="_blank">
+					<div class="mkf_item3"></div>
+				</a>
+			</div>
+		</div>
+		<!--综合2-->
+		<div id="item4">
+			<!--mkf_item4_1-->
+			<div id="a_item4">
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=155" target="_blank">
+					<div class="mkf_item4_1"></div>
+				</a>
+				<!--mkf_item4_2-->
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=158" target="_blank">
+					<div class="mkf_item4_2"></div>
+				</a>
+				<!--mkf_item4_3-->
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=154" target="_blank">
+					<div class="mkf_item4_3"></div>
+				</a>
+			</div>
+		</div>
+		<!--item5-->
+		<div id="item5">
+			<!--mkf_item5_1-->
+			<div id="a_item5">
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=159" target="_blank">
+					<div class="mkf_item5_1"></div>
+				</a>
+				<!--mkf_item5_2-->
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=160" target="_blank">
+					<div class="mkf_item5_2"></div>
+				</a>
+				<!--mkf_item5_3-->
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=161" target="_blank">
+					<div class="mkf_item5_3"></div>
+				</a>
+			</div>
+
+		</div>
+		<!--item6-->
+		<div id="item6">
+			<!--mkf_item6_1-->
+			<div id="a_item6">
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=162" target="_blank">
+					<div class="mkf_item6_1"></div>
+				</a>
+				<!--mkf_item6_2-->
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=163" target="_blank">
+					<div class="mkf_item6_2"></div>
+				</a>
+			</div>
+
+		</div>
+		<!--item7-->
+		<div id="item7">
+
+			<div id="a_item7">
+				<!--mkf_item7_1-->
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=164" target="_blank">
+					<div class="mkf_item7_1"></div>
+				</a>
+				<!--mkf_item7_2-->
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=165" target="_blank">
+					<div class="mkf_item7_2"></div>
+				</a>
+				<!-- mkf_item7_3-->
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=166" target="_blank">
+					<div class="mkf_item7_3"></div>
+				</a>
+			</div>
+
+		</div>
+		<!--item8-->
+		<div id="item8">
+			<div class="a_item8">
+				<a href="http://www.51mkf.com/shop/index.php?act=voucher&op=getvoucher&tid=167" target="_blank">
+					<div class="mkf_item8"></div>
+				</a>
+			</div>
+		</div>
+
+		<!--</div>-->
+
+	</body>
+	<script type="text/javascript">
+		function setBodyWidth() {
+			var barWidthHelper = document.createElement('div');
+			barWidthHelper.style.cssText = "overflow:scroll; width:100px; height:100px;";
+			document.body.appendChild(barWidthHelper);
+			var barWidth = barWidthHelper.offsetWidth - barWidthHelper.clientWidth;
+			document.body.removeChild(barWidthHelper);
+			var bodyWidth = window.screen.availWidth - barWidth;
+			return bodyWidth;
+		}
+
+		$(document).ready(
+			function() {
+				var bodyWidth = setBodyWidth() + "px";
+				//document.body.style.width=bodyWidth;
+				$("body").css("width", bodyWidth);
+			}
+		);
+	</script>
+
+</html>
